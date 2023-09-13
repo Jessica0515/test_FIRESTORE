@@ -18,8 +18,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import org.checkerframework.checker.units.qual.A;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
                     recyclerView.setAdapter(adapter);
                     adapter.setOnItemClickListener(new UserAdapter.OnItemClickListener() {
                         @Override
-                        public void onClick(test user) {
+                        public View.OnClickListener onClick(test user) {
                             App.test= user;
                             startActivity(new Intent(MainActivity.this,EditUserActivity.class));
+                            return null;
                         }
                     });
                 }
@@ -88,9 +87,10 @@ public class MainActivity extends AppCompatActivity {
                             recyclerView.setAdapter(adapter);
                             adapter.setOnItemClickListener(new UserAdapter.OnItemClickListener() {
                                 @Override
-                                public void onClick(test user) {
+                                public View.OnClickListener onClick(test user) {
                                     App.test= user;
                                     startActivity(new Intent(MainActivity.this,EditUserActivity.class));
+                                    return null;
                                 }
                             });
                         }

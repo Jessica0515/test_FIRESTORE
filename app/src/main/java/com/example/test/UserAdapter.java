@@ -57,6 +57,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
     }
 
     public interface OnItemClickListener{
-        void onClick(test user);
+        View.OnClickListener onClick(test user);
     }
 }

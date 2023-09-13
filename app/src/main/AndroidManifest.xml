@@ -15,14 +15,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".note_main"-->
+<!--            android:exported="false" />-->
         <activity
-            android:name=".EditUserActivity"
-            android:exported="false" />
+            android:name=".pack_edit_pack"
+            android:exported="false"
+            android:label="@string/title_activity_pack_edit_pack"
+            android:theme="@style/Theme.Test" />
         <activity
-            android:name=".AddUserActivity"
+            android:name=".pack_add_pack"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".EditUserActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".AddUserActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".note_main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

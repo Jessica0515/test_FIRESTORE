@@ -34,9 +34,6 @@
             android:id="@+id/list_item_phone"
             android:singleLine="true"/>
 
-
-
-
     </RelativeLayout>
 
 
